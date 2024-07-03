@@ -85,7 +85,7 @@ public class Tabuleiro {
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 6; j++) {
                 if (tab[i][j] == tab[i][j + 1] && tab[i][j] == tab[i][j + 2]) {
-                    secPoint[i][j]     = true;
+                    secPoint[i][j] = true;
                     secPoint[i][j + 1] = true;
                     secPoint[i][j + 2] = true;
                 }
@@ -97,7 +97,7 @@ public class Tabuleiro {
         for (int j = 0; j < 8; j++) {
             for (int i = 0; i < 6; i++) {
                 if (tab[i][j] == tab[i + 1][j] && tab[i][j] == tab[i + 2][j]) {
-                    secPoint[i][j]     = true;
+                    secPoint[i][j] = true;
                     secPoint[i + 1][j] = true;
                     secPoint[i + 2][j] = true;
                 }

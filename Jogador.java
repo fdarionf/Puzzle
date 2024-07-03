@@ -10,15 +10,23 @@ public class Jogador {
         this.ouro = ouro;
     }
 
-    public int getVida() {
-        return vida;
+    public void perderVida(int vidaPerdida){
+        this.vida -= vidaPerdida;
     }
 
-    public int getExp() {
-        return exp;
+    public void ganharVida(int maisVida){
+        this.vida += maisVida;
     }
-
-    public int getOuro() {
-        return ouro;
+    public void perderOuro(int ouroPerdido){
+        this.ouro -= ouroPerdido;
+    }
+    public void ganharOuro(int ouroGanho){
+        this.ouro -= ouroGanho;
+    }
+    public void ganharExp(int expGanho){
+        this.exp += expGanho;
+    }
+    public void perderExp(int expPerdido){
+        this.exp -= expPerdido;
     }
 }
